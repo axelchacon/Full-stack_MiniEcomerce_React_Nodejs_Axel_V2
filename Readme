@@ -1,0 +1,18 @@
+######
+
+### trabajamos por separado el backend y front end con carpetas,
+
+#### pero hacemos un "npm init -y" en todo el poyecto que nos servirá para deplear todo el proyecto más fácil
+
+Para el backend: npm install express mongoose dotenv
+Para el backend: usaremos la vesión más moderna de express , para ello vamos a package.json y agregamos "type: module"
+Ver si funciona bien el express: node backend/server.js
+
+si queremos usar el "npm run dev" en vez del "node backend/server.js", demos ir a package.json y cambiamos "scripts": {
+"dev": "node backend/server.js"
+}
+
+-siguinet para ver cambios en tiempo real , poner en el terminal : npm i nodemon -D
+-luego  demos ir a package.json y cambiamos "scripts": {
+"dev": "nodemon backend/server.js"
+}
